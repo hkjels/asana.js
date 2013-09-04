@@ -11,6 +11,7 @@ Test
 ----
 
 You'll need a patched version of [jscoverage](https://github.com/visionmedia/node-jscoverage)
+to see coverage reports.
 
     $ echo '{"key": "Your API-key"}' > spec/config.json
     $ make test
