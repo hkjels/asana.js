@@ -1,5 +1,5 @@
 
-MOCHA=node_modules/.bin/mocha --require should
+MOCHA=node_modules/.bin/mocha --require should --check-leaks
 JS_COV=jscoverage
 REPORTER=spec
 

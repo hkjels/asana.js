@@ -21,15 +21,12 @@ describe('Asana API', function() {
   });
 
   describe('GET /users/me', function() {
-
     it ('should respond with JSON', function(done) {
       request(app)
         .get('/users/me')
         .expect('Content-Type', /json/)
         .expect(200, done);
     });
-
   });
-
 });
 
