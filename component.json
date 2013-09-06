@@ -1,0 +1,9 @@
+{
+  "name": "asana-client",
+  "scripts": ["lib/client.js"],
+  "main": "lib/client.js",
+  "dependencies": {
+    "component/each": "*",
+    "visionmedia/superagent": "*"
+  }
+}

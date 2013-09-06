@@ -6,6 +6,7 @@
     "superagent": "0.15.4"
   },
   "devDependencies": {
+    "component": "*",
     "connect": "*",
     "mocha": "*",
     "should": "*",

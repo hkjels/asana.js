@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Asana client</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="mocha/mocha.js"></script>
+    <script src="sinon/sinon.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="../build/build.js"></script>
+    <script src="client.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>

@@ -3,8 +3,8 @@
  * Test dependencies.
  */
 
-var Asana = require('../lib/asana')
-  , config = require('./config')
+var Asana = require('../../')
+  , config = require('../config')
   , request = require('supertest')
   , connect = require('connect')
   , http = require('http')
