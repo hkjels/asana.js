@@ -17,7 +17,7 @@ npm install http
 Example
 -------
 ```
-var Asana = require('./index')
+var Asana = require('asana')
   , connect = require('connect')
   , app = connect()
   , http = require('http')
