@@ -2,10 +2,35 @@
 Asana API
 =========
 
-Proxy for the Asana API. Using the Asana API directly from within a browser
-is not allowed by their API, so this basically just makes their API
-available on your own domain.
+Proxy for the Asana API. While Asana does allow cross domain Ajax request, it's not ideal because it exposes your API key.
 
+Installation
+------------
+```
+sudo npm install hkjels/asana.js
+npm install connect
+npm install http
+```
+
+Example
+-------
+Run a proxy on your server
+```
+var Asana = require('asana')
+  , connect = require('connect')
+  , app = connect()
+  , http = require('http')
+
+var asana = new Asana("INSERT_API_KEY");
+app.use(asana);
+http.createServer(app).listen(7357);
+```
+Execute an ajax request on your client
+```
+var ajax = new XMLHttpRequest();
+ajax.open("GET", "/users/me");
+ajax.send();
+```
 
 Test
 ----
