@@ -2,9 +2,7 @@
 Asana API
 =========
 
-Proxy for the Asana API. Using the Asana API directly from within a browser
-is not allowed by their API, so this basically just makes their API
-available on your own domain.
+Proxy for the Asana API. While Asana does allow cross domain Ajax request, it's not ideal because it exposes your API key.
 
 Installation
 ------------
