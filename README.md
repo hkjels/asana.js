@@ -16,6 +16,7 @@ npm install http
 
 Example
 -------
+Run a proxy on your server
 ```
 var Asana = require('asana')
   , connect = require('connect')
@@ -25,6 +26,12 @@ var Asana = require('asana')
 var asana = new Asana("INSERT_API_KEY");
 app.use(asana);
 http.createServer(app).listen(7357);
+```
+Execute an ajax request on your client
+```
+var ajax = new XMLHttpRequest();
+ajax.open("GET", "/users/me");
+ajax.send();
 ```
 
 Test
