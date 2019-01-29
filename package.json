@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": "Henrik Kjelsberg <hkjels@me.com>",
   "dependencies": {
-    "superagent": "0.15.4"
+    "superagent": "~3.7.0"
   },
   "devDependencies": {
     "component": "*",
